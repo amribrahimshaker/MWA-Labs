@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 2</title>
+</head>
+<body>
+
+
+<script>
+
+	function isWeekend(){
+		const todayDate = new Date();
+		const day = todayDate.getDay(); // 0 - 6 (0 is Sunday)
+		console.log('day: ' + day);
+		//return (day === 0) ? 'weekend' :'weekday';
+		
+		var days = {
+			"0" : "weekend",
+			"1" : "weekday",
+			"2" : "weekday",
+			"3" : "weekday",
+			"4" : "weekday",
+			"5" : "weekday",
+			"6" : "weekday"
+		};
+		return days[day];
+	}
+    
+	
+	console.log(isWeekend());
+    
+
+</script>
+
+</body>
+</html>
