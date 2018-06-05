@@ -1,0 +1,37 @@
+=======================================================================
+books {
+	_id: "",
+	isbn: "",
+	author: "",
+	keywords: []
+}
+students {
+	_id: "",
+	name: "",
+	email: "",
+	phone : ""
+}
+borrowed_Books {
+	_id: "",
+	student_id: "",
+	book_id: "",
+	borrow_date: "",
+	due_date: "",
+	is_returned : ""
+}
+=======================   << OR >>    =================================
+books {
+	_id: "",
+	isbn: "",
+	author: "",
+	keywords: [],
+	available: "",
+	borrowed_by_user : {
+		name: "",
+		email: "",
+		phone : "",
+		borrow_date: "",
+		due_date: ""
+	}
+}
+========================================================================
