@@ -1,0 +1,2 @@
+We create an index to improve the performance of our operations.
+we can index by Author of the book as well as keywords.
