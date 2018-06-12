@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div>
+
+    <!--
+    <input type="number" [value]="ComponentCounterValue" (input)="ComponentCounterValue=$event.target.value">
+ 
+
+    
+    <input type="number" [value]="ComponentCounterValue" (input)="counterValueChangedInput($event)">
+ -->
+    <app-counter (OnCounterChange)="counterValueChanged($event)" [ComponentCounterValue]="ComponentCounterValue"></app-counter>
+
+    <!--
+    <app-counter (OnCounterChange)="counterValueChanged($event)" ComponentCounterValue="{{ComponentCounterValue}}"></app-counter>
+    -->
+    <p>Component Counter Value = {{ComponentCounterValue}}</p>
+</div>
+
+
