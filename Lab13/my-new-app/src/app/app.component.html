@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      <div class="col-xs-10">
+          <h1>Routing Examples!</h1>
+          <hr>
+           <!-- 
+          without exact:true it will be added to all routes as they all start with / 
+          <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+          -->
+       
+          <a [routerLink]="['homepage']">homepage</a>  | 
+          <a [routerLink]="['farms']">farms</a>
+          
+          <hr>
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
